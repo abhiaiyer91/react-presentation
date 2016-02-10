@@ -99,6 +99,17 @@ export default class Presentation extends React.Component {
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
               The Current Ecosystem
             </Heading>
+            <List>Enforce patterns for front end applications</List>
+            <List>Normalize browser behavior</List>
+            <List>Move towards flexible integration with other stacks</List>
+          </Slide>
+          <Slide transition={["spin", "slide"]} bgColor="tertiary">
+            <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
+              Imperative Landscape, opinions on integration
+            </Heading>
+            <List>In 2010, backbone.js introduced a model-first framework for front end applications. Data/Temp/Logic Overload</List>
+            <List>2009, AngularJS with KVO</List>
+            <List>EmberJS 2011</List>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
@@ -111,8 +122,12 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Components</ListItem></Appear>
-              <Appear><ListItem>VirtualDOM</ListItem></Appear>
+              <Appear><ListItem>VirtualDOM, The View</ListItem></Appear>
               <Appear><ListItem>JSX</ListItem></Appear>
+              <Appear><ListItem>Implementation Agnostic</ListItem></Appear>
+              <Appear><ListItem>Isomorphic</ListItem></Appear>
+              <Appear><ListItem>Build Tool via Meteor</ListItem></Appear>
+              <Appear><ListItem>Build Tool via Meteor</ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["spin", "zoom"]} bgColor="tertiary">
@@ -184,6 +199,8 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>Manage state with a minimal but predictable API</ListItem>
+              <ListItem>Single State Atom</ListItem>
+              <ListItem>Implementation agnostic. 3 functions really.</ListItem>
             </List>
           </Slide>
           <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
