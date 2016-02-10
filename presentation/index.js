@@ -95,20 +95,10 @@ export default class Presentation extends React.Component {
               <Cite>Steve McConnell in Code Complete</Cite>
             </BlockQuote>
           </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="primary">
-            <Heading caps fit>Lets Talk About State</Heading>
-            <Layout>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  UI State
-                </Heading>
-              </Fill>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Domain State
-                </Heading>
-              </Fill>
-            </Layout>
+          <Slide transition={["spin", "slide"]} bgColor="tertiary">
+            <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
+              The Current Ecosystem
+            </Heading>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
@@ -139,6 +129,16 @@ export default class Presentation extends React.Component {
                     If you think in a React way, the concerns of the application will be small composable components.
                   </aside>
           </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Heading caps fit size={1} textColor="secondary">
+              A closer look at JSX
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/deck.example")}
+              margin="20px auto"
+              />
+          </Slide>
           <Slide transition={["spin", "zoom"]} bgColor="tertiary">
             <Heading caps fit size={1} textColor="primary">
               VirtualDOM
@@ -162,6 +162,21 @@ export default class Presentation extends React.Component {
             <Heading caps fit size={1} textColor="secondary">
               What about Data Flow?
             </Heading>
+          </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary">
+            <Heading caps fit>Lets Talk About State</Heading>
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                  UI State
+                </Heading>
+              </Fill>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                  Domain State
+                </Heading>
+              </Fill>
+            </Layout>
           </Slide>
           <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
             <Heading caps fit size={1} textColor="primary">
